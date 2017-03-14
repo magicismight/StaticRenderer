@@ -1,0 +1,16 @@
+{
+    "version": "1.0.0",
+    "name": "static-renderer",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:magicismight/StaticRenderer.git"
+    },
+    "license": "MIT",
+    "main": "./StaticRenderer",
+    "description": "react StaticRenderer",
+    "keywords": [
+        "react-component",
+        "ios",
+        "android"
+    ]
+}
