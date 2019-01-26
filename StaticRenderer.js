@@ -1,21 +1,17 @@
-import React, { Component, Children, PropTypes } from 'react';
+import { Component, PropTypes } from 'react';
 
 export default class extends Component {
-    props: {
-        shouldUpdate: boolean,
-        render: Function,
-    };
 
     static propTypes = {
         shouldUpdate: PropTypes.bool.isRequired,
         render: PropTypes.func.isRequired,
     };
 
-    shouldComponentUpdate(nextProps: { shouldUpdate: boolean }): boolean {
+    shouldComponentUpdate(nextProps) {
         return nextProps.shouldUpdate;
     }
 
-    render(): React.Element<any> {
+    render() {
         return this.props.render();
     }
 
